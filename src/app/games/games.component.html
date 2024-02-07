@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row mt-5 pt-5 pb-2">
+    <div class="col-lg-6" data-aos="fade-down-right" data-aos-duration="2000">
+      <h1 class="fw-bold my-5" data-aos="fade-down-right" data-aos-duration="2000">
+        Jump Game
+      </h1>
+      <p class="fs-4 w-75">
+        We don’t forget how fun is important in our life so we worked on
+        developing a game that can be played by your EEG signals.
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <div>
+        <!-- <video width="560" height="315" loop autoplay muted>
+          <source src="/assets/video/game.mp4" type="video/mp4" />
+        </video> -->
+        <iframe src="https://graduation-game.vercel.app/" frameborder="0" width="100%" height="300"></iframe>
+      </div>
+      <div class="row rounded shadow bg-dark text-white ms-2 me-2 p-2 mb-5">
+        <div class="col">
+          <span class="mb-1">Name :</span>
+        </div>
+        <div class="col">
+          <span class="mb-1">Score :</span>
+        </div>
+      </div>
+    </div>
+<!--Table-->
+ <section class="">
+  <div class="container">
+    <div class="table text-center rounded p-4">
+      <div class="table-responsive">
+        <table class="table text-start table-bordered table-hover mb-0">
+          <thead>
+            <tr class="text-white">
+              <th scope="col">Time</th>
+              <th scope="col">Action</th>
+              <th scope="col">Power</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-white">{{ allData?.time }}</td>
+              <td class="text-white">{{ allData?.action }}</td>
+              <td class="text-white">{{ allData?.power }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+
+</div>

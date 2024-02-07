@@ -1,0 +1,90 @@
+<section class="py-5 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7" data-aos="fade-down-right" data-aos-duration="2000">
+        <h1
+          class="fw-bold my-5"
+          data-aos="fade-down-right"
+          data-aos-duration="2000"
+        >
+          The Robot Car
+        </h1>
+        <p class="fs-4">
+          We present an approach to control a real car with brain signals.
+          <br />
+          To achieve this, we use a brain-computer interface (BCI) which is
+          connected to our autonomous car. <br />
+          The car is equipped with a variety of sensors and can be controlled by
+          a computer.
+        </p>
+      </div>
+      <div class="col-md-5 mt-5">
+        <div class="arrows">
+          <a class="rotate" [class.rotaition]="rotate" (click)="updateData(2)">
+          </a>
+          <a
+            class="arrow arrow-top"
+            (click)="updateData(1)"
+            [class.hovered]="forward"
+            ><span><i class="fa-solid fa-angles-up"></i></span
+          ></a>
+          <a
+            class="arrow arrow-right"
+            [class.hovered]="right"
+            (click)="updateData(3)"
+            ><span><i class="fa-solid fa-angles-right"></i></span
+          ></a>
+          <a
+            class="arrow arrow-bottom"
+            [class.hovered]="back"
+            (click)="updateData(5)"
+            ><span><i class="fa-solid fa-angles-down"></i></span
+          ></a>
+          <a
+            class="arrow arrow-left"
+            [class.hovered]="left"
+            (click)="updateData(4)"
+            ><span><i class="fa-solid fa-angles-left"></i></span
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Table-->
+<section class="">
+  <div class="container">
+    <div class="table text-center rounded p-4">
+      <div class="table-responsive">
+        <table class="table text-start table-bordered table-hover mb-0">
+          <thead>
+            <tr class="text-white">
+              <th scope="col">Time</th>
+              <th scope="col">Action</th>
+              <th scope="col">Power</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-white">{{ allData?.time }}</td>
+              <td class="text-white">
+                {{
+                    allData?.action == 1
+                    ? "Forward"
+                    : allData?.action == 2
+                    ? "Rotation"
+                    : allData?.action == 3
+                    ? "Right"
+                    : allData?.action == 4
+                    ? "Left"
+                    : "Backward"
+                }}
+              </td>
+              <td class="text-white">{{ allData?.power }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

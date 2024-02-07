@@ -1,0 +1,56 @@
+.navbar {
+  box-shadow: 0px 2px 60px #000000; /* Add shadow effect to the bottom of the navbar */
+  z-index: 10000;
+}
+
+.logout{
+    cursor: pointer;
+    /* padding: 3px; */
+    letter-spacing: 1.5px;
+    background-color: #a81c1c;
+    border-radius: 2%;
+    padding: 0 10px;
+    font-weight: 500;
+}
+.logout:hover{
+  background-color: #000000;
+  transition: all .3s ease-in-out;
+}
+.logout:hover a{
+  color: #FFF !important;
+}
+
+.logout a{
+    font-size: 16px !important;
+}
+.Logo{
+  width: 65px;
+  max-height: 60px;
+}
+.nav-item a:hover{
+  color: #a81c1c;
+  background-color: transparent;
+  transition: all .3s ease-in-out;
+}
+.navbar-nav .nav-item .nav-link.active{
+  color: #a81c1c;
+}
+.navbar-nav .nav-item .nav-link{
+  font-size: 18px;
+}
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: top 0.4s; /* Add transition for smooth animation */
+}
+
+.hidden {
+  top: -100px; /* Move the navbar off-screen */
+}
+
+

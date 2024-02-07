@@ -1,0 +1,361 @@
+.scroll-container {
+  overflow-x: auto;
+}
+
+.content-wrapper {
+  overflow: hidden;
+}
+
+/*Carousal*/
+a {
+  text-decoration: none;
+}
+.carousel-inner img {
+  object-fit: cover;
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 28%;
+}
+
+.btn {
+  background-color: #a81c1c;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: #FFFF !important;
+  transition: all .2s ease-in-out;
+}
+
+/* About */
+.about_content {
+  margin-right: 25px;
+}
+
+.about_content>h2 {
+  font-size: 40px;
+  margin: 90px 0 15px;
+  color: #a81c1c;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about_content>h3 {
+  font-size: 30px;
+  margin: 2px 0 30px;
+  text-transform: inherit;
+  font-weight: bold;
+}
+
+.about_content>p {
+  line-height: 18px;
+  margin-bottom: 18px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+button {
+  font-weight: bold;
+}
+
+button:hover {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  background-color: inherit;
+  color: #631212;
+  font-weight: bold;
+}
+
+/* Why us*/
+#why_us {
+  background-color: #eee;
+}
+
+#why_us h2 {
+  margin: 70px 0 20px;
+}
+
+#why_us .head_title h2 {
+  color: #a81c1c;
+}
+
+.why_us_item h4 {
+  color: #a81c1c;
+  font-weight: 500;
+}
+
+#why_us i {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  box-shadow: 0 0 0 10px #000000, 0 0 0 20px #ffffff, 0 0 0 30px #a81c1c;
+  line-height: 1.8;
+  font-size: 60px;
+  color: #a81c1c;
+}
+
+.why_us_item {
+  padding-bottom: 50px;
+}
+
+.why_us_item>h4 {
+  font-size: 15px;
+  margin: 60px 0 20px;
+}
+
+/**********************************/
+/********* Team #3 Style **********/
+/**********************************/
+.team-3 {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.team-3 .team-img {
+  position: relative;
+  font-size: 0;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.team-3 .team-img img {
+  width: 100%;
+  height: 250px;
+}
+
+.team-3 .team-social {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, .5);
+  transition: all .3s;
+  font-size: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+.team-3:hover .team-social {
+  opacity: 1;
+}
+
+.team-3 .team-social a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 11px 0 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  transition: all .3s;
+  margin-top: 50px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+a.social-tw {
+  background: #00acee;
+}
+
+a.social-fb {
+  background: #3b5998;
+}
+
+a.social-li {
+  background: #0e76a8;
+}
+
+a.social-in {
+  background: #3f729b;
+}
+
+a.social-yt {
+  background: #c4302b;
+}
+.team h2{
+  color: #a81c1c;
+}
+.team .card span{
+  color: #a81c1c;
+}
+.team .card p{
+  font-weight: 500;
+  font-size: 13px;
+}
+.team-3 .team-social a:last-child {
+  margin-right: 0;
+}
+
+.team-3:hover .team-social a {
+  margin-top: 0;
+}
+
+.team-3 .team-social a:hover {
+  color: #222222;
+  background: #ffffff;
+}
+
+.team-3 .team-content {
+  padding: 70px 20px 20px 20px;
+  margin-top: -50px;
+  text-align: center;
+  background: #f3f4fa;
+  transition: all .5s;
+}
+
+.team-3:hover .team-content {
+  background: #222222;
+}
+
+.team-3:hover .team-content h2,
+.team-3:hover .team-content h3,
+.team-3:hover .team-content h4,
+.team-3:hover .team-content p {
+  color: #ffffff;
+}
+
+.team-3 .team-content h2 {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.team-3 .team-content h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.team-3 .team-content h4 {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.team-3 .team-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* ScrollUP */
+#scrollUp {
+  background: url(/assets/images/top.png)no-repeat scroll 0 0;
+  bottom: 20px;
+  color: #000;
+  height: 40px;
+  right: 20px;
+  width: 40px;
+  opacity: 0.7;
+}
+
+#scrollUp:hover {
+  background: url(/assets/images/top.png)no-repeat scroll 0 -40px;
+}
+
+.chat-button {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  background-color: #a81c1c;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.contact-message {
+  display: block;
+  position: fixed;
+  bottom: 80px;
+  right: 65px;
+  background-color: #fff;
+  padding: 20px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.close-button {
+  position: absolute;
+  top: 0px;
+  left: 7px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  width: 17em;
+  height: 18em;
+  background: #171717;
+  transition: 1s ease-in-out;
+  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card span {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.card .info {
+  font-weight: 400;
+  height: 4em;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.72em;
+  margin: 1em;
+}
+
+.card .img {
+  width: 4.8em;
+  height: 4.8em;
+  background: white;
+  border-radius: 15px;
+  margin:20px auto;
+}
+
+.card .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card a {
+  color: white;
+  transition: .4s ease-in-out;
+}
+
+.card a:hover {
+  color: red;
+}

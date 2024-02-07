@@ -1,0 +1,16 @@
+.title h1{
+  color: #a81c1c;
+}
+.title h2{
+  color: #000000;
+}
+.title a:hover{
+  color: #a81c1c;
+}
+.login-btn{
+  background-color: #a81c1c;
+}
+.login-btn:hover{
+  background-color: #000000;
+  color: #FFFF;
+}

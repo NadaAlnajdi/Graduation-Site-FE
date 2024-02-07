@@ -1,0 +1,31 @@
+*{
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+}
+/* Page Header */
+
+
+.page-header .breadcrumb-item,
+.page-header .breadcrumb-item a {
+  font-weight: 500;
+}
+
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+  color: var(--tertiary);
+}
+
+h1,h3{
+  color: #a81c1c !important;
+}
+
+i{
+  margin-bottom: -4px;
+}
+.nav-tabs .nav-link{
+color: #a81c1c;
+}
+.tab-content p{
+  color: #000000;
+}

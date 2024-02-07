@@ -1,0 +1,18 @@
+/* .container {
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+} */
+
+h1{
+  color: #a81c1c;
+}
+
+p{
+  font-weight: bold;
+}
+.table{
+  background-color: #000;
+}

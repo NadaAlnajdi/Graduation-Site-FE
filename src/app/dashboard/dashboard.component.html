@@ -1,0 +1,35 @@
+<!-- Recent Sales Start -->
+<!--Table-->
+<section class="mt-5 pt-5">
+  <div class="container">
+    <div class="table text-center rounded p-4">
+      <div class="table-responsive">
+        <h3 class="text-white mb-4">All Users</h3>
+        <table class="table text-start table-bordered table-hover mb-0">
+          <thead>
+          <tr class="text-white">
+
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Role</th>
+            <th scope="col">Created Date</th>
+            <th scope="col">Action</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr  *ngFor="let user of users">
+            <td class="text-white">{{user._id}}</td>
+            <td class="text-white">{{user.name}}</td>
+            <td class="text-white">{{user.email}}</td>
+            <td class="text-white">{{user.userLevel}}</td>
+            <td class="text-white">{{user.createdAt}}</td>
+            <td class="text-white" class="text-center"><button class="btn btn-sm btn-danger" (click)="delUser(user._id)" [visible]="user.userLevel == 'admin'">Delete</button></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Recent Sales End -->

@@ -1,0 +1,169 @@
+
+h1 {
+  color: #a81c1c !important;
+}
+
+.arrows {
+  background-color: black;
+  position: relative;
+  margin: auto;
+  height: 400px;
+  /* width: 400px; */
+}
+
+.rotate {
+  position: absolute;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  background-color: #af2828;
+}
+
+.rotate:hover {
+  height: 70px;
+  width: 70px;
+}
+
+.arrow {
+  transition: border 0.2s linear;
+  text-decoration: none;
+  line-height: 0;
+  font-size: 40px;
+  position: absolute;
+  height: 0;
+}
+
+/*right*/
+.arrow-right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-bottom: 150px solid transparent;
+  border-top: 150px solid transparent;
+  border-right: 150px solid black;
+}
+
+.arrow-right>span {
+  left: 65px;
+  position: absolute;
+  display: block;
+}
+
+.arrow-right:hover {
+  border-right-color: #333;
+}
+
+.arrow-right:hover span {
+  left: 75px;
+}
+
+/*left*/
+.arrow-left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-bottom: 150px solid transparent;
+  border-top: 150px solid transparent;
+  border-left: 150px solid black;
+}
+
+.arrow-left>span {
+  right: 65px;
+  position: absolute;
+  display: block;
+}
+
+.arrow-left:hover {
+  border-left-color: #333;
+}
+
+.arrow-left:hover span {
+  right: 75px;
+}
+
+/*top*/
+.arrow-top {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 150px solid black;
+}
+
+.arrow-top>span {
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  display: block;
+}
+
+.arrow-top:hover {
+  border-top-color: #333;
+}
+
+.arrow-top:hover span {
+  bottom: 75px;
+}
+
+/*top*/
+.arrow-bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid black;
+}
+
+.arrow-bottom>span {
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  display: block;
+}
+
+.arrow-bottom:hover {
+  border-bottom-color: #333;
+}
+
+.arrow-bottom:hover span {
+  top: 75px;
+}
+
+i {
+  line-height: 0 !important;
+  color: #a81c1c;
+  font-size: 50px;
+}
+
+h1 {
+  color: orange;
+}
+
+p {
+  font-weight: bold;
+}
+
+.hovered span i {
+  color: #FFF;
+  font-size: 60px;
+}
+
+.rotaition {
+  background-color: white;
+  height: 70px;
+  width: 70px;
+}
+
+.table {
+  background-color: #000;
+}
